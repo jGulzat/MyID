@@ -26,7 +26,7 @@ let package = Package(
             path: "Sources/MyIdSDK",
             linkerSettings: [
                 .linkedLibrary("c++"),
-                .unsafeFlags(["-ObjC"])
+                .unsafeFlags(["-ObjC", "-all_load"])
             ]
         )
     ]
